@@ -2,10 +2,6 @@
 
 ## The Road We’ve Travelled
 
-Let’s take stock of what we’ve built.
-
-## The Road We’ve Travelled
-
 * Master/Details
   * Our Tour of Heroes now displays a list of selectable heroes
   * We added the ability to select a hero and show the hero’s details
