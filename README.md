@@ -2,10 +2,11 @@
 
 ## The Road We’ve Travelled
 
-* Master/Details
-  * Our Tour of Heroes now displays a list of selectable heroes
-  * We added the ability to select a hero and show the hero’s details
-  * We learned how to use the built-in directives ngIf and ngFor in a component’s template
+* Multiple Components
+  * dsfsdf
+  * dsfdsf
+  * dsfdf
+  * sdfdsf
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
