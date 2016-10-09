@@ -10,11 +10,6 @@ Let’s take stock of what we’ve built.
   * We can both display and change the hero’s name after adding a two-way data binding to the <input> element using the built-in ngModel directive.
   * The ngModel directive also propagates changes to every other binding of the hero.name.
 
-* Master/Detail
-  * Something
-  * Something
-  * Something
-
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
 ## Development server
