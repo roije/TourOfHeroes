@@ -3,10 +3,10 @@
 ## The Road We’ve Travelled
 
 * Multiple Components
-  * dsfsdf
-  * dsfdsf
-  * dsfdf
-  * sdfdsf
+  * We created a reusable component
+  * We learned how to make a component accept input
+  * We learned to declare the application directives we need in an Angular module. We list the directives in the NgModule decorator's declarations array.
+  * We learned to bind a parent component to a child component.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
