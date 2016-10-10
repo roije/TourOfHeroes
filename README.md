@@ -3,11 +3,7 @@
 ## The Road We’ve Travelled
 
 * Services
-  * We created a service class that can be shared by many components.
-  * We used the ngOnInit Lifecycle Hook to get our heroes when our AppComponent activates.
-  * We defined our HeroService as a provider for our AppComponent.
-  * We created mock hero data and imported them into our service.
-  * We designed our service to return a Promise and our component to get our data from the Promise.
+  
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
