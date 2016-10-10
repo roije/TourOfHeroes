@@ -11,4 +11,13 @@ export class HeroService{
   getHeroes(): Hero[]{
     return HEROES;
   }
+
+  getHero(id: number): Hero {
+    var heroes = this.getHeroes();
+    for (var i = 0; i < heroes.length; i++) {
+      if (heroes[i].id === id) {
+        return heroes[i];
+      }
+    }
+  }
 }

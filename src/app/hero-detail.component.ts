@@ -1,26 +1,40 @@
 /**
  * Created by roije on 09/10/2016.
  */
-import {Component, Input} from '@angular/core'
+import {Component, Input, OnInit} from '@angular/core'
 import {Hero} from "./hero";
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
+import { HeroService } from './hero.service';
 
 @Component({
   //Meta data:
   selector: 'my-hero-detail',
-  template: `
-   <div *ngIf="hero">
-      <h2>{{hero.name}} details!</h2>
-      <div><label>id: </label>{{hero.id}}</div>
-      <div>
-        <label>name: </label>
-        <input [(ngModel)]="hero.name" placeholder="name"/>
-      </div>
-    </div>
-  `,
+  templateUrl: 'hero-detail.component.html',
+  styleUrls: ['./hero-detail.component.css']
 })
 
-export class HeroDetailComponent{
+export class HeroDetailComponent implements OnInit{
 
-  @Input()
   hero: Hero;
+
+  ngOnInit(): void{
+    this.route.params.forEach((params: Params) =>
+    {
+      //The hero id is a number. Route parameters are always strings.
+      // So we convert the route parameter value to a number with the JavaScript (+) operator.
+      let id = +params['id'];
+      this.hero = this.heroService.getHero(id);
+    });
+  }
+
+  constructor(
+    private heroService: HeroService,
+    private route: ActivatedRoute,
+    private location: Location
+  ){}
+
+  goBack(): void {
+    this.location.back();
+  }
 }

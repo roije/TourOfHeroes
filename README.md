@@ -3,7 +3,12 @@
 ## The Road We’ve Travelled
 
 * Services
-  
+  * We added the Angular Router to navigate among different components.
+  * We learned how to create router links to represent navigation menu items.
+  * We used router link parameters to navigate to the details of user selected hero.
+  * We shared the HeroService among multiple components.
+  * We moved HTML and CSS out of the component file and into their own files.
+  * We added the uppercase pipe to format data.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
