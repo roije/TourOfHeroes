@@ -2,7 +2,7 @@
 
 ## The Road We’ve Travelled
 
-* Multiple Components
+* Services
   * We created a reusable component
   * We learned how to make a component accept input
   * We learned to declare the application directives we need in an Angular module. We list the directives in the NgModule decorator's declarations array.
